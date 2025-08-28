@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency-Hotline</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="./assets/logo-green.png"
+      type="image/x-icon"
+    />
     <!-- DaisyUi And Tailwind CDN Link -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@5"
@@ -62,20 +66,148 @@
           />
         </div>
         <div
-          class="text-nowrap font-medium text-white bg-[#00A63E] px-4 py-2 rounded-[50px] sm:px-8"
+          class="text-nowrap font-medium text-white bg-[#00A63E] px-4 py-2 rounded-[50px] sm:px-8 items-center"
         >
           2 copy
         </div>
       </div>
     </header>
     <main>
-      <section class="banner">
-        <img src="./assets/logo-dark.png" alt="" />
-        <h2>Emergency Service Directory</h2>
-        <p>
+      <section
+        class="banner flex flex-col items-center text-centerpx-4 py-6 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] sm:px-8 sm:12"
+      >
+        <img
+          class="w-16 h-16 sm:w-20 sm:h-20 mb-4"
+          src="./assets/logo-dark.png"
+          alt=""
+        />
+        <h2 class="text-white text-2xl font-bold sm:text-[40px]">
+          Emergency Service Directory
+        </h2>
+        <p class="text-white text-center sm:text-base max-w-5xl mt-2">
           Government Emergency Services at Your Fingertip – A Project by
           Government of the People’s Republic of Bangladesh
         </p>
+      </section>
+      <!-- Main UI Section -->
+      <section class="main-ui">
+        <div class="main-container bg-green-50 min-h-screen p-6">
+          <div class="grid lg:grid-cols-12 gap-6">
+            <!-- call History -->
+            <aside
+              class="bg-white p-4 rounded-lg shadow order-1 lg:order-2 lg:col-span-3"
+            >
+              <div class="flex justify-between items-center pb-2">
+                <h2 class="font-bold flex items-center gap-2">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.25 6C11.25 5.58579 11.5858 5.25 12 5.25C12.4142 5.25 12.75 5.58579 12.75 6V11.25H18C18.4142 11.25 18.75 11.5858 18.75 12C18.75 12.4142 18.4142 12.75 18 12.75H12C11.5858 12.75 11.25 12.4142 11.25 12V6Z"
+                      fill="#5C5C5C"
+                    />
+                    <path
+                      d="M21.25 12C21.25 6.89121 17.1088 2.75 12 2.75C6.89121 2.75 2.75 6.89121 2.75 12C2.75 17.1088 6.89121 21.25 12 21.25C17.1088 21.25 21.25 17.1088 21.25 12ZM22.75 12C22.75 17.9372 17.9372 22.75 12 22.75C6.06279 22.75 1.25 17.9372 1.25 12C1.25 6.06279 6.06279 1.25 12 1.25C17.9372 1.25 22.75 6.06279 22.75 12Z"
+                      fill="#5C5C5C"
+                    />
+                  </svg>
+
+                  Call History
+                </h2>
+                <button
+                  class="btn btn-xs rounded-3xl bg-[#00A63E] text-white px-7 py-3 text-sm font-thin"
+                >
+                  Clear
+                </button>
+              </div>
+              <!-- History Info -->
+              <div class="mt-3 space-y-3 text-xs bg-gray-50 rounded-xl p-4">
+                <div class="flex justify-between">
+                  <span class="font-semibold text-lg">Fire Service Number</span>
+                  <span class="text-gray-500 text-[16px]">11:36:58 AM</span>
+                </div>
+                <div>
+                  <span class="text-[16px]">999</span>
+                </div>
+              </div>
+              <div class="mt-3 space-y-3 text-xs bg-gray-50 rounded-xl p-4">
+                <div class="flex justify-between">
+                  <span class="font-semibold text-lg">National Emergency</span>
+                  <span class="text-gray-500 text-[16px]">11:35:20 AM</span>
+                </div>
+                <div>
+                  <span class="text-[16px]">1994-999999</span>
+                </div>
+              </div>
+              <div class="mt-3 space-y-3 text-xs bg-gray-50 rounded-xl p-4">
+                <div class="flex justify-between">
+                  <span class="font-semibold text-lg"
+                    >Bangladesh Railway Helpline
+                  </span>
+                  <span class="text-gray-500 text-[16px]">11:36:58 AM</span>
+                </div>
+                <div>
+                  <span class="text-[16px]">999</span>
+                </div>
+              </div>
+              <div class="mt-3 space-y-3 text-xs bg-gray-50 rounded-xl p-4">
+                <div class="flex justify-between">
+                  <span class="font-semibold text-lg"
+                    >Anti-Corruption Helpline</span
+                  >
+                  <span class="text-gray-500 text-[16px]">11:36:58 AM</span>
+                </div>
+                <div>
+                  <span class="text-[16px]">999</span>
+                </div>
+              </div>
+              <div class="mt-3 space-y-3 text-xs bg-gray-50 rounded-xl p-4">
+                <div class="flex justify-between">
+                  <span class="font-semibold text-lg">Fire Service Number</span>
+                  <span class="text-gray-500 text-[16px]">11:36:58 AM</span>
+                </div>
+                <div>
+                  <span class="text-[16px]">999</span>
+                </div>
+              </div>
+              <div class="mt-3 space-y-3 text-xs bg-gray-50 rounded-xl p-4">
+                <div class="flex justify-between">
+                  <span class="font-semibold text-lg">National Emergency</span>
+                  <span class="text-gray-500 text-[16px]">11:35:20 AM</span>
+                </div>
+                <div>
+                  <span class="text-[16px]">1994-999999</span>
+                </div>
+              </div>
+              <!-- history info end -->
+            </aside>
+            <!-- Card--- Section -->
+            <div
+              class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 order-2 lg:order-1 lg:col-span-9"
+            >
+              <div class="card bg-white shadow p-4 relative">
+                <button class="absolute top-3 right-3 text-gray-400">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.8335 4.5C19.0395 4.5 20.8335 6.294 20.8335 8.5C20.8335 13.169 15.2905 17.441 12.3335 19.523C9.3765 17.441 3.8335 13.169 3.8335 8.5C3.8335 6.294 5.6275 4.5 7.8335 4.5C8.4758 4.50145 9.10836 4.65716 9.67794 4.95405C10.2475 5.25093 10.7375 5.68029 11.1065 6.206L12.3335 7.953L13.5605 6.207C13.9294 5.68111 14.4193 5.25155 14.9889 4.95449C15.5585 4.65743 16.1911 4.50156 16.8335 4.5ZM16.8335 3C15.9502 2.99987 15.0799 3.21288 14.2965 3.62095C13.5131 4.02902 12.8397 4.6201 12.3335 5.344C11.8273 4.6201 11.1539 4.02902 10.3705 3.62095C9.58712 3.21288 8.71681 2.99987 7.8335 3C6.37481 3 4.97586 3.57946 3.94441 4.61091C2.91296 5.64236 2.3335 7.04131 2.3335 8.5C2.3335 14.219 8.8335 18.938 12.3335 21.35C15.8335 18.938 22.3335 14.219 22.3335 8.5C22.3335 7.77773 22.1912 7.06253 21.9148 6.39524C21.6384 5.72795 21.2333 5.12163 20.7226 4.61091C20.2119 4.10019 19.6055 3.69506 18.9383 3.41866C18.271 3.14226 17.5558 3 16.8335 3Z"
+                      fill="#5C5C5C"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
