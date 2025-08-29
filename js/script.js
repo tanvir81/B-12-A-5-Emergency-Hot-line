@@ -66,4 +66,17 @@ clearBtn.addEventListener("click", function () {
 });
 
 // ----------Copy Function code----------
-document.addEventListener("click", function (e) {});
+document.addEventListener("click", function (e) {
+  if (e.target.id === "copy-btn" || e.target.closest("#copy-btn")) {
+    const card = e.target.closest("#card-body");
+    const hotlineNumber = card.querySelector(".service-num").textContent.trim();
+
+    navigator.clipboard.writeText(hotlineNumber).then(function () {
+      alert(`Hotline number ${hotlineNumber} copied`);
+      const copyCountDiv = document.getElementById("copy-count");
+      let currentCount = parseInt(copyCountDiv.textContent) || 0;
+      currentCount += 1;
+      copyCountDiv.textContent = `${currentCount} copy`;
+    });
+  }
+});
