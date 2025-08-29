@@ -1,4 +1,6 @@
 6. Answer the following questions clearly:
+
+7. 
    Q.1 What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
    These four selectors are used to find and select elements, but they do it differently:
